@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('deploy') {
       steps {
-        kubernetesDeploy()
+        kubernetesDeploy(secretName: 'admin-user-token-r27kv', secretNamespace: 'kube-system')
       }
     }
   }
