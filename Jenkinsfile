@@ -7,9 +7,12 @@ pipeline {
 
 echo "Creating configmap ..."
 
-kubectl version
-kubectl run nginx --image=nginx
 '''
+      }
+    }
+    stage('deploy') {
+      steps {
+        kubernetesDeploy(configs: 'test_deploy.yaml', enableConfigSubstitution: true, kubeconfigId: '2a296293-c563-4b0d-92a0-786d79258de5	')
       }
     }
   }
