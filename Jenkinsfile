@@ -7,11 +7,7 @@ pipeline {
 
 echo "Creating configmap ..."
 
-ls -al
-echo "---------------------"
-find / -name kubectl
-echo "---------------------"
-kubectl get nodes'''
+kubectl version'''
       }
     }
   }
