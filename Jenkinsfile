@@ -9,12 +9,9 @@ echo "Creating configmap ..."
 
 ls -al
 echo "---------------------"
-cat /etc/os-release
+find / -name kubectl
 echo "---------------------"
-env
-echo "---------------------"
-set
-'''
+kubectl get nodes'''
       }
     }
   }
