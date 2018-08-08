@@ -8,7 +8,8 @@ pipeline {
 echo "Creating configmap ..."
 
 kubectl version
-kubectl get nodes'''
+kubectl run nginx --image=nginx
+'''
       }
     }
   }
