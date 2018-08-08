@@ -8,7 +8,10 @@ pipeline {
           sh '''kubectl create cm test1234 --dry-run --from-file=hello_world.py -o yaml > test1234_cm.yaml
 ls -al
 kubectl apply -f test_deploy.yaml
-kubectl get pods '''
+kubectl apply -f test1234_cm.yaml
+echo "----------------"
+kubectl get pods 
+kubectl get cm'''
         }
 
       }
