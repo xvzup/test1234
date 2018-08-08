@@ -7,7 +7,8 @@ pipeline {
 
 echo "Creating configmap ..."
 
-kubectl version'''
+kubectl version
+kubectl get nodes'''
       }
     }
   }
