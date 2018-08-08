@@ -14,7 +14,7 @@ ls -al'''
     }
     stage('deploy') {
       steps {
-        kubernetesDeploy(configs: 'test_deploy.yaml', enableConfigSubstitution: true, kubeconfigId: '2a296293-c563-4b0d-92a0-786d79258de5')
+        kubernetesDeploy(configs: 'test_deploy.yaml', enableConfigSubstitution: true, kubeconfigId: '7ac4b35d-364f-434e-83f2-9ff976e23047')
       }
     }
   }
