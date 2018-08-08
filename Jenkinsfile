@@ -8,11 +8,10 @@ pipeline {
 echo "Download kubectl ..."
 curl -O https://storage.googleapis.com/kubernetes-release/release/v1.9.10/bin/linux/amd64/kubectl 
 chmod +x kubectl
-sudo mv kubectl /usr/local/bin
-
+id
 
 echo "Creating configmap ..."
-kubectl version
+./kubectl version
 #kubectl create cm appcode --from-file=hello_world.py -o yaml --dry-run > test1234_cm.yaml
 
 ls -al'''
