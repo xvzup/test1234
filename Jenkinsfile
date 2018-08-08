@@ -11,7 +11,8 @@ kubectl apply -f test_deploy.yaml
 kubectl apply -f test1234_cm.yaml
 echo "----------------"
 kubectl get pods 
-kubectl get cm'''
+kubectl get cm
+echo "End of .."'''
         }
 
       }
