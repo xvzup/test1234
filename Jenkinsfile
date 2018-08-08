@@ -7,7 +7,7 @@ pipeline {
 
 echo "Creating configmap ..."
 
-kubectl create cm appcode --from-file=hello_world.py -o yaml > test1234_cm.yaml'''
+kubectl create cm appcode --from-file=hello_world.py -o yaml --dry-run > test1234_cm.yaml'''
       }
     }
     stage('deploy') {
