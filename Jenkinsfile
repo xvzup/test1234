@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('stage1') {
       environment {
-        PATH = '$PATH:`pwd`'
+        PATH = '$PATH:.'
       }
       steps {
         sh '''curl -O https://storage.googleapis.com/kubernetes-release/release/v1.9.10/bin/linux/amd64/kubectl
