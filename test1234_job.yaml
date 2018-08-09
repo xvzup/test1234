@@ -12,8 +12,9 @@ spec:
         image: python
         volumeMounts:
           - name: pythoncode
-            mountpath: /application
-        command: [ "sh", "-c", "/application/hello_world/hello_world.py" ]
+            mountPath: /application
+        command: ["sh","-c"]
+        args: ["cp /application/hello_world.py /tmp/; chmod +x /tmp/hello_world.py; /tmp/hello_world.py"]
       restartPolicy: Never
       volumes:
       - name: pythoncode
@@ -21,5 +22,5 @@ spec:
           name: test1234
           items:
             - key: hello_world.py
-              path: hello_world
+              path: hello_world.py
      
