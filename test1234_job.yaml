@@ -13,7 +13,7 @@ spec:
         volumeMounts:
           - name: pythoncode
             mountpath: /application
-        command: [ "sh", "-c", "/application/hello_world.py" ]
+        command: [ "sh", "-c", "/application/hello_world/hello_world.py" ]
       restartPolicy: Never
       volumes:
       - name: pythoncode
@@ -21,4 +21,5 @@ spec:
           name: test1234
           items:
             - key: hello_world.py
+              path: hello_world
      
