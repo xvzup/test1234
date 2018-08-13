@@ -1,7 +1,4 @@
 #!/usr/bin/env python3
 
-print("Hello ...")
+print("Hello Volkswagen!")
 print("--------")
-print("Yep")
-print("--------")
-print("hhhh")
